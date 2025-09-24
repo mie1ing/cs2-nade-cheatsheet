@@ -1,3 +1,186 @@
-.app-name { font-weight: 700; }
-img { max-height: 320px; }
-.badge { padding:2px 6px;border:1px solid #999;border-radius:6px;font-size:12px;margin-right:6px; }
+:root {
+  color-scheme: light dark;
+  --bg: #f6f8fa;
+  --fg: #1f2328;
+  --accent: #3b82f6;
+  --border: #d0d7de;
+  --card-bg: #ffffffcc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+.site-header {
+  padding: 2.5rem 1.5rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: #fff;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-header .tagline {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  gap: 2rem;
+}
+
+.sidebar {
+  flex: 1 1 220px;
+  max-width: 260px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 1.5rem;
+  align-self: flex-start;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sidebar a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  display: block;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar a:focus-visible {
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--accent);
+}
+
+.content {
+  flex: 3 1 520px;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.map-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+
+.nade-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 1.75rem;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.nade-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.nade-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.nade-details {
+  padding-left: 1.2rem;
+  margin: 0 0 1.25rem;
+}
+
+.nade-details li + li {
+  margin-top: 0.4rem;
+}
+
+code,
+kbd {
+  background: rgba(15, 23, 42, 0.08);
+  border-radius: 4px;
+  padding: 0 0.35em;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+kbd {
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: inset 0 -1px 0 rgba(15, 23, 42, 0.2);
+}
+
+.nade-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
+}
+
+figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(31, 35, 40, 0.7);
+}
+
+@media (max-width: 960px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    max-width: none;
+  }
+}

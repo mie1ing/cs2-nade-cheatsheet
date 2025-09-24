@@ -1,35 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CS2 道具描点速查</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <div id="app">加载中…</div>
-  <script>
-    (function () {
-      var repoName = 'cs2-nade-cheatsheet';
-      var pathSegments = location.pathname.split('/').filter(Boolean);
-      var repoIndex = pathSegments.indexOf(repoName);
-      var basePath = repoIndex === -1 ? '/' : '/' + pathSegments.slice(0, repoIndex + 1).join('/') + '/';
+  <header class="site-header">
+    <h1>CS2 道具速查</h1>
+    <p class="tagline">常用道具描点与操作一目了然</p>
+  </header>
 
-      window.$docsify = {
-        name: 'CS2 道具速查',
-        repo: '',
-        basePath: basePath,
-        loadSidebar: true,
-        alias: {
-          '/.*/_sidebar.md': '_sidebar.md'
-        },
-        subMaxLevel: 2,
-        search: { noData: '未找到', paths: 'auto', placeholder: '搜索地图/道具/关键字' }
-      };
-    })();
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <div class="layout">
+    <nav class="sidebar" aria-label="地图导航">
+      <h2>地图</h2>
+      <ul>
+        <li><a href="#inferno">Inferno</a></li>
+        <li><a href="#mirage">Mirage</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <section id="inferno" class="map-section">
+        <h2>Inferno</h2>
+        <article class="nade-card">
+          <h3>A 小道 — CT 烟</h3>
+          <div class="nade-meta">
+            <span class="badge">类型：烟雾</span>
+            <span class="badge">阵营：T</span>
+            <span class="badge">一致性：★★★★☆</span>
+          </div>
+          <ul class="nade-details">
+            <li><strong>落点：</strong>CT 交叉口</li>
+            <li><strong>站位：</strong>第二根木桶旁砖缝</li>
+            <li><strong>准星对齐：</strong>准星对齐钟楼右侧窗角与电线交点</li>
+            <li><strong>操作：</strong>松开走位，按住左键 + 跳投（跳投绑定：在控制台输入 <code>bind alt "+jump; -attack; -jump"</code>）</li>
+            <li><strong>备注：</strong>封 CT 8–10 秒，配合 A 爆弹</li>
+          </ul>
+          <div class="nade-gallery">
+            <figure>
+              <img src="https://example.com/inferno_ct_smoke_pos.jpg" alt="Inferno A 小道 CT 烟的站位" />
+              <figcaption>站位</figcaption>
+            </figure>
+            <figure>
+              <img src="https://example.com/inferno_ct_smoke_aim.jpg" alt="Inferno A 小道 CT 烟的准星位置" />
+              <figcaption>准星</figcaption>
+            </figure>
+            <figure>
+              <img src="https://example.com/inferno_ct_smoke_land.jpg" alt="Inferno A 小道 CT 烟的落点" />
+              <figcaption>落点</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="mirage" class="map-section">
+        <h2>Mirage</h2>
+        <article class="nade-card">
+          <h3>中路 — vip 慢烟</h3>
+          <div class="nade-meta">
+            <span class="badge">类型：烟雾</span>
+            <span class="badge">阵营：T</span>
+            <span class="badge">一致性：★★★★★</span>
+          </div>
+          <ul class="nade-details">
+            <li><strong>落点：</strong>vip</li>
+            <li><strong>站位：</strong>垃圾桶前</li>
+            <li><strong>描点：</strong>对齐栏杆角落</li>
+            <li><strong>操作：</strong>按 <kbd>D</kbd> 移动时跳投</li>
+            <li><strong>备注：</strong>可能被炸开</li>
+          </ul>
+          <div class="nade-gallery">
+            <figure>
+              <img src="assets/730_20250924045421_1.png" alt="Mirage 中路 vip 慢烟的描点" />
+              <figcaption>描点</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
