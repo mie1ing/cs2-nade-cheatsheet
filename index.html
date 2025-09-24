@@ -16,7 +16,10 @@
       loadSidebar: true,
       subMaxLevel: 2,
       search: { noData: '未找到', paths: 'auto', placeholder: '搜索地图/道具/关键字' },
-      alias: { '/': '/' }
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
