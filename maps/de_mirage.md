@@ -9,5 +9,5 @@
 **操作**: 按D移动时跳投  
 **备注**: 可能被炸开
 
-![描点](https://example.com/mirage_window_smoke_aim.jpg)
+![描点](assets/730_20250924045421_1.png)
 
