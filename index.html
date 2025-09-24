@@ -11,14 +11,19 @@
   <div id="app">加载中…</div>
   <script>
     (function () {
-      var repoBasePath = '/cs2-nade-cheatsheet/';
-      var basePath = location.pathname.indexOf(repoBasePath) === 0 ? repoBasePath : '/';
+      var repoName = 'cs2-nade-cheatsheet';
+      var pathSegments = location.pathname.split('/').filter(Boolean);
+      var repoIndex = pathSegments.indexOf(repoName);
+      var basePath = repoIndex === -1 ? '/' : '/' + pathSegments.slice(0, repoIndex + 1).join('/') + '/';
 
       window.$docsify = {
         name: 'CS2 道具速查',
         repo: '',
         basePath: basePath,
         loadSidebar: true,
+        alias: {
+          '/.*/_sidebar.md': '_sidebar.md'
+        },
         subMaxLevel: 2,
         search: { noData: '未找到', paths: 'auto', placeholder: '搜索地图/道具/关键字' }
       };
