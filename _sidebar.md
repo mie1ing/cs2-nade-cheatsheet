@@ -1,3 +1,3 @@
 - 地图
-  - [Inferno](maps/de_inferno.md)
-  - [Mirage](maps/de_mirage.md)
+  - [Inferno](#/maps/de_inferno.md)
+  - [Mirage](#/maps/de_mirage.md)
