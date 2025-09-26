@@ -3,3 +3,4 @@
   - [Mirage](maps/de_mirage.md)
   - [Train](maps/de_train.md)
   - [Ancient](maps/de_ancient.md)
+  - [Dust 2](maps/de_dust_2.md)
