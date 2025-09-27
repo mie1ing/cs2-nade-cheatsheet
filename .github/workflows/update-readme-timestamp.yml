@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     if: github.actor != 'github-actions[bot]'
@@ -28,5 +31,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "chore: update README last updated timestamp"
+          git add README.md
+          git commit -m "chore: update README last updated timestamp"
+
           git push
