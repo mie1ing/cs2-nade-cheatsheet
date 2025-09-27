@@ -1,0 +1,32 @@
+name: Update README timestamp
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update README timestamp
+        run: |
+          LAST_UPDATED=$(git log -1 --format='%cI')
+          sed -i "s|<!--LAST_UPDATED-->.*<!--END_LAST_UPDATED-->|<!--LAST_UPDATED-->${LAST_UPDATED}<!--END_LAST_UPDATED-->|" README.md
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: update README last updated timestamp"
+          git push
