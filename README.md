@@ -4,7 +4,8 @@
 
 ![LOGO](assets/cs2大学习.png)
 
-## 更新信息
 
-- 最后更新：<!--LAST_UPDATED-->2025-09-27T03:40:02+02:00<!--END_LAST_UPDATED-->
+
+
+最后更新：<!--LAST_UPDATED-->2025-09-27T03:40:02+02:00<!--END_LAST_UPDATED-->
 
