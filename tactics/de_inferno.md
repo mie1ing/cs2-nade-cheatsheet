@@ -9,7 +9,7 @@
 - **道具配置**: 1 闪 + 1 烟。
 - **具体走位**:
   1. 所有人去A二楼。
-  2. 丢 [Walker烟](../maps/de_inferno.md#%E4%BE%A7%E9%81%93-walker%E7%83%9F)、烟囱闪。
+  2. 丢 [Walker烟](maps/de_inferno.md#%E4%BE%A7%E9%81%93-walker%E7%83%9F)、烟囱闪。
 - **配合提示**: 第一位T跳去A1。
 
 ### 默认
