@@ -1,6 +1,12 @@
-- 地图
+- CS2道具描点速查
   - [Inferno](maps/de_inferno.md)
   - [Mirage](maps/de_mirage.md)
   - [Train](maps/de_train.md)
   - [Ancient](maps/de_ancient.md)
   - [Dust 2](maps/de_dust_2.md)
+- 简易战术本
+  - [Inferno 战术](tactics/de_inferno.md)
+  - [Mirage 战术](tactics/de_mirage.md)
+  - [Train 战术](tactics/de_train.md)
+  - [Ancient 战术](tactics/de_ancient.md)
+  - [Dust 2 战术](tactics/de_dust_2.md)
