@@ -1,4 +1,4 @@
-- CS2道具描点速查
+- 道具描点速查
   - [Inferno](maps/de_inferno.md)
   - [Mirage](maps/de_mirage.md)
   - [Train](maps/de_train.md)
