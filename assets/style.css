@@ -1,3 +1,24 @@
 .app-name { font-weight: 700; }
 img { max-height: 320px; }
 .badge { padding:2px 6px;border:1px solid #999;border-radius:6px;font-size:12px;margin-right:6px; }
+.edit-this-page { margin-top: 2.5rem; text-align: right; }
+.edit-this-page a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #3eaf7c;
+  border-radius: 999px;
+  color: #3eaf7c;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+.edit-this-page a::before {
+  content: '\270F\FE0F';
+}
+.edit-this-page a:hover,
+.edit-this-page a:focus {
+  background-color: #3eaf7c;
+  color: #fff;
+}

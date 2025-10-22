@@ -10,6 +10,12 @@
 
 ![LOGO](assets/cs2大学习.png)
 
+## 如何参与修订
+
+所有页面底部都新增了“在 GitHub 上编辑本页”按钮，访客可以快速跳转到对应的 Markdown 文件并提交修改建议。
+
+如果你将站点部署到 GitHub Pages 以外的平台，请在 `index.html` 中的 `editLink.repo` 字段写入实际仓库地址（支持 `user/repo` 或完整的 `https://github.com/user/repo`），以确保按钮指向正确位置。
+
 
 
 
