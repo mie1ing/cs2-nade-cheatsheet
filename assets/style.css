@@ -22,3 +22,120 @@ img { max-height: 320px; }
   background-color: #3eaf7c;
   color: #fff;
 }
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: #fff;
+  color: #2c3e50;
+}
+
+.content {
+  background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .content {
+    background-color: #121212;
+  }
+
+  .sidebar {
+    background-color: #1b1b1b;
+    border-right-color: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  .sidebar .app-name-link,
+  .app-name {
+    color: #fff;
+  }
+
+  .sidebar ul li a {
+    color: #cfcfcf;
+  }
+
+  .sidebar ul li a:hover,
+  .sidebar ul li a:focus {
+    color: #fff;
+  }
+
+  .sidebar ul li a.active {
+    color: #3eaf7c;
+    font-weight: 600;
+  }
+
+  .markdown-section {
+    color: inherit;
+  }
+
+  .markdown-section a {
+    color: #4dbd8a;
+  }
+
+  .markdown-section pre,
+  .markdown-section code {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+  }
+
+  .markdown-section blockquote {
+    border-left-color: #3eaf7c;
+    background-color: #1f1f1f;
+    color: #d0d0d0;
+  }
+
+  .sidebar-toggle {
+    background-color: #1f1f1f;
+    border-color: #2a2a2a;
+  }
+
+  .sidebar-toggle span {
+    background-color: #e0e0e0;
+  }
+
+  .search .input-wrap {
+    background-color: #1f1f1f;
+    border-color: #2a2a2a;
+  }
+
+  .search .input-wrap input {
+    background-color: transparent;
+    color: #e0e0e0;
+  }
+
+  .search .input-wrap input::placeholder {
+    color: #a5a5a5;
+  }
+
+  .search .results-panel {
+    background-color: #1f1f1f;
+    border-color: #2a2a2a;
+  }
+
+  .search .matching-post,
+  .search .matching-post .title {
+    color: #e0e0e0;
+  }
+
+  .edit-this-page a {
+    border-color: #3eaf7c;
+    color: #3eaf7c;
+  }
+
+  .edit-this-page a:hover,
+  .edit-this-page a:focus {
+    background-color: #3eaf7c;
+    color: #121212;
+  }
+}
